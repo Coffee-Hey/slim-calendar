@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slim Calendar - 隐私政策 / Privacy Policy</title>
+  <meta name="description" content="Slim Calendar Privacy Policy - A privacy-focused, zero-tracking, local-first calendar app for iOS.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📅</text></svg>">
+  <style>
+    :root {
+      --bg-color: #f5f5f7;
+      --card-bg: rgba(255, 255, 255, 0.85);
+      --card-border: rgba(0, 0, 0, 0.08);
+      --text-primary: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --accent-color: #0071e3;
+      --tag-bg: rgba(0, 113, 227, 0.1);
+      --tag-color: #0071e3;
+      --shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+      --badge-green: #34c759;
+      --badge-green-bg: rgba(52, 199, 89, 0.12);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #000000;
+        --card-bg: rgba(28, 28, 30, 0.85);
+        --card-border: rgba(255, 255, 255, 0.12);
+        --text-primary: #f5f5f7;
+        --text-secondary: #86868b;
+        --accent-color: #2997ff;
+        --tag-bg: rgba(41, 151, 255, 0.15);
+        --tag-color: #2997ff;
+        --shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        --badge-green: #30d158;
+        --badge-green-bg: rgba(48, 209, 88, 0.18);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 40px 20px 80px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--tag-bg);
+      color: var(--tag-color);
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .lang-switcher {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      display: flex;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 3px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .lang-btn {
+      border: none;
+      background: none;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      border-radius: 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--accent-color);
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    /* Highlights Banner */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .highlight-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .highlight-icon {
+      font-size: 26px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .highlight-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .highlight-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    /* Policy Card */
+    .policy-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 36px 32px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin-left: 20px;
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .pill-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 6px;
+      background: var(--badge-green-bg);
+      color: var(--badge-green);
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Language display */
+    .content-en {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Language Switcher -->
+  <div class="lang-switcher">
+    <button class="lang-btn active" id="btn-zh" onclick="setLang('zh')">简体中文</button>
+    <button class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <div class="container">
+    
+    <!-- Header -->
+    <header>
+      <div class="app-badge">
+        <span>🛡️</span>
+        <span class="content-zh">隐私至上 · 本地优先</span>
+        <span class="content-en">Privacy First · Local Only</span>
+      </div>
+      <h1 class="content-zh">Slim Calendar 隐私政策</h1>
+      <h1 class="content-en">Slim Calendar Privacy Policy</h1>
+      <p class="meta content-zh">最近更新日期：2026 年 9 月 29 日 | 生效日期：2026 年 9 月 29 日</p>
+      <p class="meta content-en">Last Updated: September 29, 2026 | Effective Date: September 29, 2026</p>
+    </header>
+
+    <!-- Highlights Banner -->
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <span class="highlight-icon">🔒</span>
+        <div class="highlight-title content-zh">本地存储与零上传</div>
+        <div class="highlight-title content-en">Local Storage & Zero Upload</div>
+        <div class="highlight-desc content-zh">不设任何云端服务器，所有日程与待办直接保存于您设备本地的系统数据库。</div>
+        <div class="highlight-desc content-en">No cloud servers. Events and reminders stay exclusively in your device's native database.</div>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-icon">🚫</span>
+        <div class="highlight-title content-zh">无广告 · 零追踪</div>
+        <div class="highlight-title content-en">Zero Ads · Zero Tracking</div>
+        <div class="highlight-desc content-zh">绝不包含第三方广告 SDK、用户画像或行为追踪代码，保持纯粹极简。</div>
+        <div class="highlight-desc content-en">Contains no advertising SDKs, analytics frameworks, or behavioral tracking code.</div>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-icon">☁️</span>
+        <div class="highlight-title content-zh">官方 Apple 加密同步</div>
+        <div class="highlight-title content-en">Apple Encrypted Sync</div>
+        <div class="highlight-desc content-zh">若启用 iCloud，数据同步由苹果系统底层加密传输，我们无法访问任何数据。</div>
+        <div class="highlight-desc content-en">iCloud sync is managed directly and end-to-end encrypted by Apple. We never intermediate.</div>
+      </div>
+    </div>
+
+    <!-- Main Content Card -->
+    <div class="policy-card">
+      
+      <!-- CHINESE CONTENT -->
+      <div class="content-zh">
+        <div class="section">
+          <h2>1. 前言与隐私承诺</h2>
+          <p>Slim Calendar（以下简称“我们”或“本应用”）非常重视用户的个人隐私与数据安全。本隐私政策旨在明确向您告知我们如何处理与您相关的信息。我们的核心设计原则是：<strong>用户的日程数据完全属于用户自己，应用无需且绝不在任何服务器端收集或分析您的个人信息。</strong></p>
+        </div>
+
+        <div class="section">
+          <h2>2. 数据收集与权限使用说明 <span class="pill-badge">零服务器收集</span></h2>
+          <p>本应用在运行期间可能请求访问以下 iOS 系统权限，且所有权限仅在设备本地生效：</p>
+          <ul>
+            <li><strong>日历权限（NSCalendarsFullAccessUsageDescription）</strong>：用于读取您在系统日历中已有的日程并在应用及桌面小组件中清晰展示，同时支持您在主动操作时创建、修改或删除日程。</li>
+            <li><strong>提醒事项权限（NSRemindersFullAccessUsageDescription）</strong>：用于读取并显示您的待办事项清单，并在您勾选完成或新建待办时同步写回系统提醒事项。</li>
+            <li><strong>通讯录权限（NSContactsUsageDescription）</strong>：仅在您调起系统原生日程编辑表单选择会议参与人时，由 iOS 系统组件提供联系人姓名补全，本应用绝不扫描、读取或转存您的通讯录通讯名单。</li>
+          </ul>
+          <p>您随时可以在 iOS 设备的“设置 -> Slim Calendar”中关闭上述任何权限。权限关闭后，应用将无法读取对应的日程或待办，但依然保证其他离线功能正常可用。</p>
+        </div>
+
+        <div class="section">
+          <h2>3. 本地存储与 App Group 机制</h2>
+          <p>为了让桌面小组件（Widget）能够实时显示您选中的日期和日程条目，本应用使用了 iOS 系统的 App Group（共享群组）沙盒技术。该共享存储纯粹位于您的手机物理存储芯片中，仅供主应用与本应用的小组件扩展进程读取，绝不会向外界网络传输。</p>
+        </div>
+
+        <div class="section">
+          <h2>4. 第三方 SDK 与数据共享</h2>
+          <p>我们郑重承诺：</p>
+          <ul>
+            <li>本应用<strong>不包含任何第三方广告 SDK</strong>；</li>
+            <li>本应用<strong>不包含任何统计分析、崩溃回传或用户行为追踪 SDK</strong>；</li>
+            <li>本应用<strong>绝不向任何第三方机构、商业组织出售、出租或共享您的任何数据</strong>。</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>5. 数据存储期限与删除</h2>
+          <p>本应用不拥有外部数据服务器，因此不保留任何云端数据。当您在日历中删除某条事件，或直接从设备中卸载 Slim Calendar 时，所有本地缓存与共享文件将瞬间从您的设备中彻底销毁。</p>
+        </div>
+
+        <div class="section">
+          <h2>6. 儿童与未成年人隐私</h2>
+          <p>本应用专为大众用户设计，不针对儿童收集任何个人信息。由于我们完全不收集个人身份数据，本应用天然符合包括 COPPA 在内的全球未成年人数据保护法律法规。</p>
+        </div>
+
+        <div class="section">
+          <h2>7. 隐私政策的更新</h2>
+          <p>如果随着功能迭代或法律合规要求，本政策发生修订，我们将在本页面发布最新版本，并在 App 内更新生效时间。建议您定期查阅以了解最新保护措施。</p>
+        </div>
+
+        <div class="section">
+          <h2>8. 联系方式</h2>
+          <p>如果您对本隐私政策有任何疑问、意见或反馈，欢迎通过电子邮件与开发者取得联系：</p>
+          <p><strong>联系邮箱：</strong><a href="mailto:support@slimcalendar.app">support@slimcalendar.app</a></p>
+        </div>
+      </div>
+
+      <!-- ENGLISH CONTENT -->
+      <div class="content-en">
+        <div class="section">
+          <h2>1. Introduction & Privacy Philosophy</h2>
+          <p>Slim Calendar ("we", "us", or "our") is dedicated to protecting your privacy. This Privacy Policy explains our commitment to keeping your personal schedule secure. Our core product philosophy is simple: <strong>your calendar data belongs solely to you. We do not own, operate, or maintain any external servers to collect or analyze your information.</strong></p>
+        </div>
+
+        <div class="section">
+          <h2>2. Data Collection & Permission Usage <span class="pill-badge">Zero Server Collection</span></h2>
+          <p>Slim Calendar requests the following iOS system permissions exclusively to perform local on-device functionality:</p>
+          <ul>
+            <li><strong>Calendar Full Access (NSCalendarsFullAccessUsageDescription)</strong>: Used to read your existing events from Apple Calendar, display them in the month view and Home Screen widgets, and allow you to create, edit, or delete events upon your explicit action.</li>
+            <li><strong>Reminders Full Access (NSRemindersFullAccessUsageDescription)</strong>: Used to display your to-do items and update reminder status when you check off or create tasks.</li>
+            <li><strong>Contacts Access (NSContactsUsageDescription)</strong>: Used strictly by the native iOS event editor sheet to display attendee names. We never scrape, export, or store your address book.</li>
+          </ul>
+          <p>You can revoke these permissions at any time via iOS "Settings -> Slim Calendar". Revoking permissions stops corresponding event displays but will not impair basic offline browsing.</p>
+        </div>
+
+        <div class="section">
+          <h2>3. On-Device Storage & App Groups</h2>
+          <p>To enable interactive Home Screen widgets to display your selected date and daily agenda, the app uses standard iOS App Group storage. This shared container resides exclusively on your device's physical storage, accessed only by Slim Calendar and its widget extension, and is never transmitted over the internet.</p>
+        </div>
+
+        <div class="section">
+          <h2>4. Third-Party Services & Tracking</h2>
+          <p>We firmly declare that:</p>
+          <ul>
+            <li>We do <strong>NOT</strong> embed any third-party advertisement SDKs.</li>
+            <li>We do <strong>NOT</strong> embed any analytics, crash reporting, or user profiling SDKs.</li>
+            <li>We do <strong>NOT</strong> sell, rent, monetize, or share your personal data with any third party.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>5. Data Retention & Deletion</h2>
+          <p>Because Slim Calendar operates without remote databases, we maintain no copies of your data. Deleting an event in the app or uninstalling Slim Calendar immediately and permanently purges all local cached files and App Group data from your device.</p>
+        </div>
+
+        <div class="section">
+          <h2>6. Children's Privacy</h2>
+          <p>Slim Calendar is designed for general audiences and does not knowingly collect personal identifiable information from children of any age. We are in full compliance with COPPA and global child privacy regulations.</p>
+        </div>
+
+        <div class="section">
+          <h2>7. Changes to this Policy</h2>
+          <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically.</p>
+        </div>
+
+        <div class="section">
+          <h2>8. Contact Us</h2>
+          <p>If you have any questions or feedback regarding this Privacy Policy, please contact us at:</p>
+          <p><strong>Support Email:</strong> <a href="mailto:support@slimcalendar.app">support@slimcalendar.app</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Slim Calendar. All rights reserved.</p>
+      <p style="margin-top: 6px;">
+        <span class="content-zh">基于纯原生 Swift & SwiftUI 构建 · 绝无后台数据采集</span>
+        <span class="content-en">Built with Native Swift & SwiftUI · Zero Background Telemetry</span>
+      </p>
+    </footer>
+
+  </div>
+
+  <script>
+    function setLang(lang) {
+      const zhElements = document.querySelectorAll('.content-zh');
+      const enElements = document.querySelectorAll('.content-en');
+      const btnZh = document.getElementById('btn-zh');
+      const btnEn = document.getElementById('btn-en');
+
+      if (lang === 'en') {
+        zhElements.forEach(el => el.style.display = 'none');
+        enElements.forEach(el => el.style.display = 'block');
+        btnEn.classList.add('active');
+        btnZh.classList.remove('active');
+        document.documentElement.lang = 'en';
+      } else {
+        zhElements.forEach(el => el.style.display = 'block');
+        enElements.forEach(el => el.style.display = 'none');
+        btnZh.classList.add('active');
+        btnEn.classList.remove('active');
+        document.documentElement.lang = 'zh-CN';
+      }
+    }
+
+    // Auto-detect browser language
+    (function initLang() {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang && userLang.toLowerCase().startsWith('en')) {
+        setLang('en');
+      } else {
+        setLang('zh');
+      }
+    })();
+  </script>
+</body>
+</html>
