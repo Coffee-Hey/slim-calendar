@@ -260,8 +260,8 @@
       </div>
       <h1 class="content-zh">Slim Calendar 隐私政策</h1>
       <h1 class="content-en">Slim Calendar Privacy Policy</h1>
-      <p class="meta content-zh">最近更新日期：2026 年 9 月 29 日 | 生效日期：2026 年 9 月 29 日</p>
-      <p class="meta content-en">Last Updated: September 29, 2026 | Effective Date: September 29, 2026</p>
+      <p class="meta content-zh">最近更新日期：2026 年 9 月 30 日 | 生效日期：2026 年 9 月 30 日</p>
+      <p class="meta content-en">Last Updated: September 30, 2026 | Effective Date: September 30, 2026</p>
     </header>
 
     <!-- Highlights Banner -->
@@ -270,8 +270,8 @@
         <span class="highlight-icon">🔒</span>
         <div class="highlight-title content-zh">本地存储与零上传</div>
         <div class="highlight-title content-en">Local Storage & Zero Upload</div>
-        <div class="highlight-desc content-zh">不设任何云端服务器，所有日程与待办直接保存于您设备本地的系统数据库。</div>
-        <div class="highlight-desc content-en">No cloud servers. Events and reminders stay exclusively in your device's native database.</div>
+        <div class="highlight-desc content-zh">应用不运营服务器；日程与待办由系统日历和提醒事项管理。账户同步取决于您的系统设置。</div>
+        <div class="highlight-desc content-en">The app runs no server. iOS Calendar and Reminders manage your data; account sync depends on your settings.</div>
       </div>
       <div class="highlight-card">
         <span class="highlight-icon">🚫</span>
@@ -282,10 +282,10 @@
       </div>
       <div class="highlight-card">
         <span class="highlight-icon">☁️</span>
-        <div class="highlight-title content-zh">官方 Apple 加密同步</div>
-        <div class="highlight-title content-en">Apple Encrypted Sync</div>
-        <div class="highlight-desc content-zh">若启用 iCloud，数据同步由苹果系统底层加密传输，我们无法访问任何数据。</div>
-        <div class="highlight-desc content-en">iCloud sync is managed directly and end-to-end encrypted by Apple. We never intermediate.</div>
+        <div class="highlight-title content-zh">系统账户同步</div>
+        <div class="highlight-title content-en">Account Sync</div>
+        <div class="highlight-desc content-zh">若启用 iCloud 或其他账户同步，由相应服务商处理；应用不参与同步。</div>
+        <div class="highlight-desc content-en">Apple or your account provider handles sync under its own data protection terms; the app does not operate the sync.</div>
       </div>
     </div>
 
@@ -312,7 +312,7 @@
 
         <div class="section">
           <h2>3. 本地存储与 App Group 机制</h2>
-          <p>为了让桌面小组件（Widget）能够实时显示您选中的日期和日程条目，本应用使用了 iOS 系统的 App Group（共享群组）沙盒技术。该共享存储纯粹位于您的手机物理存储芯片中，仅供主应用与本应用的小组件扩展进程读取，绝不会向外界网络传输。</p>
+          <p>为了让桌面小组件（Widget）能够实时显示您选中的日期和日程条目，本应用使用了 iOS 系统的 App Group（共享群组）沙盒技术。共享文件供主应用与其小组件在设备上使用。应用不会将这些缓存上传到自己的服务器；设备备份和账户同步由 iOS 及您的账户设置决定。</p>
         </div>
 
         <div class="section">
@@ -327,12 +327,12 @@
 
         <div class="section">
           <h2>5. 数据存储期限与删除</h2>
-          <p>本应用不拥有外部数据服务器，因此不保留任何云端数据。当您在日历中删除某条事件，或直接从设备中卸载 Slim Calendar 时，所有本地缓存与共享文件将瞬间从您的设备中彻底销毁。</p>
+          <p>本应用不拥有外部数据服务器，因此不保留任何云端数据。在应用中删除事件或待办时，操作会写入相应系统日历或提醒事项账户；卸载应用不会自动删除这些账户中的原始事件和待办。iOS 会按系统规则管理应用及小组件的本地缓存。如需删除账户数据，请在系统日历、提醒事项或账户服务中操作。</p>
         </div>
 
         <div class="section">
           <h2>6. 儿童与未成年人隐私</h2>
-          <p>本应用专为大众用户设计，不针对儿童收集任何个人信息。由于我们完全不收集个人身份数据，本应用天然符合包括 COPPA 在内的全球未成年人数据保护法律法规。</p>
+          <p>本应用专为大众用户设计，不针对儿童收集任何个人信息。应用不会自行收集儿童个人信息；如适用法律要求发生变化，我们会更新本政策和产品行为。</p>
         </div>
 
         <div class="section">
@@ -343,7 +343,7 @@
         <div class="section">
           <h2>8. 联系方式</h2>
           <p>如果您对本隐私政策有任何疑问、意见或反馈，欢迎通过电子邮件与开发者取得联系：</p>
-          <p><strong>联系邮箱：</strong><a href="mailto:hey.desone@gmail.com">hey.desone@gmail.com</a></p>
+          <p><strong>联系邮箱：</strong><a href="mailto:onedolphindeveloper@gmail.com">onedolphindeveloper@gmail.com</a></p>
         </div>
       </div>
 
@@ -367,7 +367,7 @@
 
         <div class="section">
           <h2>3. On-Device Storage & App Groups</h2>
-          <p>To enable interactive Home Screen widgets to display your selected date and daily agenda, the app uses standard iOS App Group storage. This shared container resides exclusively on your device's physical storage, accessed only by Slim Calendar and its widget extension, and is never transmitted over the internet.</p>
+          <p>To enable interactive Home Screen widgets to display your selected date and daily agenda, the app uses standard iOS App Group storage. The app and its widget use this shared on-device container. The app does not upload the cache to its own server; device backup and account sync depend on iOS and your account settings.</p>
         </div>
 
         <div class="section">
@@ -382,12 +382,12 @@
 
         <div class="section">
           <h2>5. Data Retention & Deletion</h2>
-          <p>Because Slim Calendar operates without remote databases, we maintain no copies of your data. Deleting an event in the app or uninstalling Slim Calendar immediately and permanently purges all local cached files and App Group data from your device.</p>
+          <p>Because Slim Calendar operates without remote databases, we maintain no copies of your data. Deleting an event or reminder in the app updates its Calendar or Reminders account. Uninstalling the app does not delete original events or reminders in those accounts. iOS manages local app and widget cache under its own rules. Delete account data in Calendar, Reminders, or your account provider.</p>
         </div>
 
         <div class="section">
           <h2>6. Children's Privacy</h2>
-          <p>Slim Calendar is designed for general audiences and does not knowingly collect personal identifiable information from children of any age. We are in full compliance with COPPA and global child privacy regulations.</p>
+          <p>Slim Calendar is designed for general audiences and does not knowingly collect personal identifiable information from children of any age. The app does not itself collect children’s personal information. We will update this policy and product behavior if applicable legal requirements change.</p>
         </div>
 
         <div class="section">
@@ -398,7 +398,7 @@
         <div class="section">
           <h2>8. Contact Us</h2>
           <p>If you have any questions or feedback regarding this Privacy Policy, please contact us at:</p>
-          <p><strong>Support Email:</strong> <a href="mailto:hey.desone@gmail.com">hey.desone@gmail.com</a></p>
+          <p><strong>Support Email:</strong> <a href="mailto:onedolphindeveloper@gmail.com">onedolphindeveloper@gmail.com</a></p>
         </div>
       </div>
 
